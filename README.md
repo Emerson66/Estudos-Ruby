@@ -11,7 +11,7 @@ o nome da variável e atribuir um valor usando o sinal ``` = ``` :
 
 ``` idade = 2 ```
 
-Com o Ruby instalado e configurado, para executar o codigo acima basta executa-lo dentro do irb usando este mesmo comando dentro do terminal
+Com o Ruby instalado e configurado, para executar o codigo acima basta executa-lo dentro do ```irb``` usando este mesmo comando dentro do terminal
 
 ![IRB - terminal](https://user-images.githubusercontent.com/70235882/230254732-cda6360b-b508-4110-8a22-c8596ff95b42.png)
 
