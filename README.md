@@ -13,7 +13,8 @@ o nome da variável e atribuir um valor usando o sinal ``` = ``` :
 
 Com o Ruby instalado e configurado, para executar o codigo acima basta executa-lo dentro do irb usando este mesmo comando dentro do terminal
 
-![IRB - terminal](https://user-images.githuburuby teste.rbsercontent.com/70235882/230253041-9cf9e17e-801e-4a71-b298-f3ca94fddbb6.png)
+![IRB - terminal](https://user-images.githubusercontent.com/70235882/230254732-cda6360b-b508-4110-8a22-c8596ff95b42.png)
+
 
 Outra forma de criar e executar código Ruby é criando um arquivo .rb e
 executá-lo utilizando o comando ruby. Se o código acima fosse digitado dentro
