@@ -49,7 +49,13 @@ idade * multiplicador
   O codigo acima não funciona ele retorna a seguinte mensagem de erro:
 ![Erro de inferencia](https://user-images.githubusercontent.com/70235882/230523285-1961ec9a-5242-47fb-95c1-a7ffdeef2650.png)
   
-  Nesse caso o Ruby ta dizendo que é impossivel multiplicar um numero com um texto.
+  Nesse caso o Ruby ta dizendo que é impossivel multiplicar um numero com um texto. Essa característica da linguagem de realizar operações em variáveis de tipos diferentes é chamada de tipagem fraca ou forte.
   
-  Essa característica da linguagem de realizar operações em variáveis de tipos di-
-ferentes é chamada de tipagem fraca ou forte.
+  No caso do Ruby, onde o tipo é determinante para o sucesso da operação, dizemos que a linguagem tem tipagem forte. Tendo a tipagem forte em mente, vamos ir mais além. Execute o seguinte código:
+```
+idade = 27
+idade = "27"
+```
+
+  Esse condigo funciona normalmente, pois não estamos fazendo nenhuma operação que misture os tipos. Ele apenas atribui um **integer** à idade e depois atribui uma **string** a mesma variavel. Linguagens que permitem que o tipo da variável possa ser alterado durante a execução do programa são linguagens com a tipagem dinâmica.
+  O contrario de tipagem dinamica é a tipagem estática. Um exemplo de linguagem com tipagem estática é o ***Java*** , uma vez que uma varíavel que nasceu ```int``` não poderá mudar o tipo como ocorre no Ruby.
