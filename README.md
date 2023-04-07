@@ -28,8 +28,7 @@ Para verificar o tipo da variavel utilize o comando ```puts idade.class```:
 
 ![puts variavel class](https://user-images.githubusercontent.com/70235882/230254394-87ea3745-079e-4af2-bcf6-f9ee450cffcd.png)
 
-  Quando invocamos .class em qualquer variável, o interpretador Ruby retorna
-o tipo da variável, que será impressa no IRB pelo método puts.
+  Quando invocamos .class em qualquer variável, o interpretador Ruby retorna o tipo da variável, que será impressa no IRB pelo método ```puts```.
 
 
 ### Qual a tipagem de Ruby?
@@ -53,8 +52,8 @@ idade * multiplicador
   
   No caso do Ruby, onde o tipo é determinante para o sucesso da operação, dizemos que a linguagem tem tipagem forte. Tendo a tipagem forte em mente, vamos ir mais além. Execute o seguinte código:
 ```
-idade = 27
-idade = "27"
+idade = 23
+idade = "23"
 ```
 
   Esse condigo funciona normalmente, pois não estamos fazendo nenhuma operação que misture os tipos. Ele apenas atribui um **integer** à idade e depois atribui uma **string** a mesma variavel. Linguagens que permitem que o tipo da variável possa ser alterado durante a execução do programa são linguagens com a tipagem dinâmica.
