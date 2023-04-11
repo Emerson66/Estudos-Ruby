@@ -81,3 +81,15 @@ Testa-lo-ei dessa forma:
 
 No interpretador ```irb``` bastaria escrevermos ```plural("carro")``` que o interpretador exibe o resultado na tela
 ![image](https://user-images.githubusercontent.com/70235882/231281556-349923cc-f2fd-4368-888b-8fbe44335c6f.png)
+
+No entanto, repare que o metodo ```plural()``` age somente na propria ```String```, mas se tentarmos chamar metodo plural direto em um objeto do tipo String vamos obter a seguinte mensagem de erro, pois ```plural``` não faz parte da classe ```String```.
+
+![image](https://user-images.githubusercontent.com/70235882/231286114-6d15dc32-896e-4c7f-93be-577b0f292375.png)
+
+Para resolver isso vamos abrir a classe e adicionarmos nosso metodo lá desta forma: 
+
+![image](https://user-images.githubusercontent.com/70235882/231286985-6cc7b663-474a-4a48-a6aa-4b0f755e32d8.png)
+
+E repare que agora conseguimos rodar o metodo ```plural``` direto de uma ```String``` qualquer sem dar erro.
+
+O que fizemos foi “abrir” a classe String durante a execução do código e adicionamos um novo método que estará disponível para todos os objetos do tipo String que existem.
