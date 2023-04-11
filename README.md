@@ -16,8 +16,7 @@ o nome da variável e atribuir um valor usando o sinal ``` = ``` :
 ![IRB - terminal](https://user-images.githubusercontent.com/70235882/230254732-cda6360b-b508-4110-8a22-c8596ff95b42.png)
 
 
-  Outra forma de criar e executar código Ruby é criando um arquivo .rb e
-executá-lo utilizando o comando ruby. Se o código acima fosse digitado dentro
+  Outra forma de criar e executar código Ruby é criando um arquivo .rb e executá-lo utilizando o comando ruby. Se o código acima fosse digitado dentro
 de um arquivo minhaIdade.rb para executá-lo faríamos:
 
 ```ruby teste.rb```
@@ -33,8 +32,7 @@ Para verificar o tipo da variavel utilize o comando ```puts idade.class```:
 
 ### Qual a tipagem de Ruby?
 
-  Se eu não declaro qual o tipo da minha variável, quer dizer que o tipo dela não im-
-porta para meu interpretador?
+  Se eu não declaro qual o tipo da minha variável, quer dizer que o tipo dela não importa para meu interpretador?
   Em Ruby, a resposta é não.
   
   Apesar de ser uma linguagem com inferencia de tipos, o tipo importa para o interpretador. Na pratica isso quer dizer que se tentarmos fazer uma operação matematica entre uma variavel do tipo **integer** e uma do tipo "string" os valores não serão convertidos para outro tipo automaticamente, afim de possibilitar a operação.
@@ -58,3 +56,28 @@ idade = "23"
 
   Esse condigo funciona normalmente, pois não estamos fazendo nenhuma operação que misture os tipos. Ele apenas atribui um **integer** à idade e depois atribui uma **string** a mesma variavel. Linguagens que permitem que o tipo da variável possa ser alterado durante a execução do programa são linguagens com a tipagem dinâmica.
   O contrario de tipagem dinamica é a tipagem estática. Um exemplo de linguagem com tipagem estática é o ***Java*** , uma vez que uma varíavel que nasceu ```int``` não poderá mudar o tipo como ocorre no Ruby.
+  
+
+
+### Linguagem interpretada
+
+Ruby é uma linguagem interpretada, pois não existe um processo de copilação para o binario executavel. Em vez disso existe um arquivo com extensão ```.rb``` e um programa para interpretar o conteudo do arquivo, tranformando-o em instruções de maquina e executando o comportamento esperado.
+Um dos problemas de uma linguagem interpretada é que não conseguimos descobrir erros do programa durante a codificação dele, somente quando vamos executa-lo, já que não temos um copilado que consegue checar os erros para nós. Para contornar esse problema é importante desde cedo desenvolver o habito de realizar testes unitarios para as classes, afim de descobrir os erros o quanto antes. 
+
+
+### Classes Abertas (OpenClasses)
+
+É dificil explicar de forma clara o conceito de __classes abertas__, em vez disso é mais facil mostrar como funciona na pratica.
+
+ Temos aqui um exemplo simples de como funciona na pratica.
+
+![image](https://user-images.githubusercontent.com/70235882/231279822-bdd3298e-6fad-44be-bf9d-94cb97d326cd.png)
+
+O que este codigo faz de forma simples é receber uma palavra e acrescentar um __s__ no final, fazendo-a ficar no plural.
+Testa-lo-ei dessa forma: 
+``` puts plural("ovo")```
+
+(O ```puts``` é um metodo que pega o argumento passado e joga para saida padrão).
+
+No interpretador ```irb``` bastaria escrevermos ```plural("carro")``` que o interpretador exibe o resultado na tela
+![image](https://user-images.githubusercontent.com/70235882/231281556-349923cc-f2fd-4368-888b-8fbe44335c6f.png)
