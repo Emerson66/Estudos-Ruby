@@ -132,5 +132,7 @@ Utilizando a interpolação:
 
 ![image](https://user-images.githubusercontent.com/70235882/232153285-fb7cdb78-f859-452d-821a-9df33a8e3c27.png)
 
-Quanto a interpolação, ela não funciona com o uso de aspas simples.
+Quanto a interpolação, ela não funciona com o uso de aspas simples, em compensação o uso de aspas simple é sutilmente mais rapido do que o das aspas duplas, pois o analizador léxico da linguagem Ruby não tem que verificar não tem que verificar se existem marcadores de interpolação ```#{}```, mas essa diferença de tempo é muito insignificante.
+
+### Estruturas de controle
 
