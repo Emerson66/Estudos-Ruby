@@ -93,3 +93,44 @@ Para resolver isso vamos abrir a classe e adicionarmos nosso metodo lá desta fo
 E repare que agora conseguimos rodar o metodo ```plural``` direto de uma ```String``` qualquer sem dar erro.
 
 O que fizemos foi “abrir” a classe String durante a execução do código e adicionamos um novo método que estará disponível para todos os objetos do tipo String que existem.
+
+## Convenções e estruturas primitivas
+
+### Convenções de Variaveis
+
+Em Ruby para declarar uma variavel só precisamos dizer o nome e o valor dela sem a necessidade de inferir o tipo, mas é importante se atentar a uma certa convenção, as variaveis devem começar com ```$``` ou ```_```, além disso, o Ruby segue o padrão ___snake case___
+
+
+### Comentarios
+
+Existe dois tipos de comentarios em Ruby, o comentario de linha e o de bloco.
+#### Comentario de linha
+
+Este é bem simples, basta inserir um ___```#```___ no inicio da linha.
+
+#### Comentario de bloco
+
+Neste tipo de comentario devemos inicia-lo com  ___```=begin```___ e terminalo com ___```=end```___.
+
+### Tipo Numerico
+
+Para declarar uma variavel do tipo inteiro basta atribuir um numero inteiro a variavel, ```idade = 24```.
+Para declarar uma variavel do tipo float basta atribuir um numero fraciionado a variavel, ```peso = 67.2```.
+
+Para Verificar o tipo da variavel basta usar o ```.class``` na variavel.
+
+![image](https://user-images.githubusercontent.com/70235882/232151683-e2efb7cf-4d4f-45a1-bc75-f4ad01c4b7b2.png)
+
+### Strings
+
+Em Ruby qualquer caractere cercado por aspas duplas ou simples são considerados uma ___String___. Para concatenar uma ___String___ podemos fazer de duas formas.
+Utilizando o ```+```: 
+
+![image](https://user-images.githubusercontent.com/70235882/232153053-6de71d51-7963-4fd3-817f-39bc9e0b435b.png)
+
+Utilizando a interpolação:
+
+![image](https://user-images.githubusercontent.com/70235882/232153285-fb7cdb78-f859-452d-821a-9df33a8e3c27.png)
+
+Quanto a interpolação, ela não funciona com o uso de aspas simples.
+
